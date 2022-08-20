@@ -1,0 +1,286 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #EBEBEB;
+    background: #1d1a1a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#list_header {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 15px 0 2px 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#list_header li a{
+    text-decoration: none;
+    color: #ad87c7;
+    width: 2rem;
+}
+
+#list_header li a:hover {
+    font-size: 1.6rem;
+    color: #eef772;
+}
+
+#list_header li a:hover::before {
+    content: "🌕";
+}
+
+section {
+    height: 80vh;
+    color: #ebebeb;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botao {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.8rem;
+}
+
+.paragrafo {
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+#paragrafo_principal {
+    margin-top: 11rem;
+}
+
+.titulo_section {
+    font-family: 'Square Peg', cursive;
+    font-size: 4rem;
+    color: rgb(241, 233, 233);
+    font-family: 'Square Peg', cursive;
+    margin-top: 2rem;
+}
+
+#titulo-principal {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+#titulo_creator {
+    padding-left: 3rem;
+}
+
+#nome {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.imagem {
+    margin-top: 1rem;
+}
+
+.imagem:hover {
+    transform: rotate3d(0, 1, 0, 40deg);
+    transition: 2s;
+}
+
+.imagem-creator:hover {
+    transform: rotate(5deg);
+    transition: 2s;
+}
+
+#paragrafo-div_creator {
+    margin: 6rem 0 0 5rem;
+}
+
+#paragrafo_creator {
+    width: 80%;
+}
+
+.imagem-creator {
+    margin: 2rem 1.5rem 0 0;
+}
+
+.img {
+    margin: 2rem 0 3rem 0;
+    margin-left: -10em;
+    transition: margin-left 900ms;
+}
+
+#img {
+    margin-left: 0;
+}
+
+.img:hover+img {
+    margin-left: -1em;
+}
+
+.corpo-js {
+    background-color: white;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+#history {
+    position: relative;
+    width: 100%;
+    height:20rem;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover #history {
+    transform: rotatex(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.flip-card-back {
+    transform: rotatex(180deg);
+}
+
+#paragrafo-card {
+    margin: 7rem 22.5rem;
+    width: 36rem;
+    font-size: 1.5rem;
+}
+
+#paragrafo-card::before {
+    content: "🌙";
+}
+
+.image-card {
+    margin: 1rem 0 0rem 23rem;
+}
+
+#color-flip-card {
+    width: 26rem;
+    height: 0.01rem;
+    margin: 0 27.5rem;
+    background-color: #EBEBEB;
+}
+
+.botao-scroll {
+    font-size: 1.2rem;
+    margin: 2rem;
+    padding: 10px;
+    background: #a572f7;
+    color: #fff;
+}
+
+footer {
+    background-color: #0c0b0b;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+}
+
+.link-footer {
+    color: #ebebeb;
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5.5rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    background: rgb(255, 255, 255, 0.1);
+    transition: 300ms;
+    margin: 1.5rem 0;
+}
+
+.link-footer:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: "";
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.link-footer:hover {
+    background-color: rgb(253, 247, 247);
+}
+
+.link-footer:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.link-rede-social {
+    width: 30px;
+    height: 30px;
+}
+
+.titulo-js, .subtituloCreator-js, .subtituloImage-js, .paragrafo_principal-js, 
+.tituloMovie-js, .paragrafoCreator-js, .paragrafoCard-js {
+    color: black;
+}
+
+.botao-js {
+    color:#EBEBEB;
+    background-color: #383830;
+}
+
+.footer-js {
+    background: #EBEBEB;
+}
+
+.facebook-js, .instagram-js, .twitter-js {
+    background-color: #1f1919;
+}
+
+.facebook-js:hover, .instagram-js:hover, .twitter-js:hover {
+    background-color: rgb(34, 28, 28)  
+}
+
+.facebook-js:after, .instagram-js:after, .twitter-js:after {
+    box-shadow: 0 0 0 3px rgb(31, 28, 28);  
+}
+
+.botaoScroll-js {
+    border: none;
+}
+
+
+
+
+
+
+
